@@ -1,0 +1,52 @@
+.center() {
+    margin: 0 auto;
+}
+.displayFlex(@justify) {
+    display: flex;
+    justify-content: @justify;
+}
+
+.displayFlex(@justify, @direction) {
+    display: flex;
+    justify-content: @justify;
+    flex-direction: @direction;
+}
+
+.navIconButton() {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+}
+
+.signUpButton(@width) {
+    font-size: 2.5rem;
+    background-color: @highlight-color;
+    border: 3px solid @highlight-color;
+    color: white;
+    width: @width;
+    padding: 2%;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2%;
+    cursor: pointer;
+    &:hover {
+        background-color: @dark-bg-color;
+    }
+}
+.navHover() {
+    &:hover {
+        color: @highlight-color;
+    }
+}
+.navAnchor(@fontSize) {
+    text-decoration: none;
+    color: white;
+    font-size: @fontSize;
+    .navHover();
+}
+.TeamPic(@img, @position, @size) {
+    background-image: @img;
+    background-position: @position;
+    background-size: @size;
+}

@@ -1,0 +1,92 @@
+.sidebar {
+    height: 100%;
+    width: 5%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: @dark-bg-color;
+    .displayFlex(space-between, column);
+    align-items: center;
+    border-right: 3px solid @highlight-color;
+    @media @small-monitor {
+        width: 8%;
+    }
+    @media @tablet { //Becomes topbar
+        width: 100%;
+        height: 10vh;
+        right: 0;
+        flex-direction: row;
+        border-right: none;
+        border-bottom: 3px solid @highlight-color;
+        padding-right: 5%;
+        padding-left: 3%;
+    }
+    .logo {
+        padding: 20% 10%;
+        @media @tablet {
+            width: 20%;
+            padding: 0;
+        }
+    }
+    #hamburger {
+        transform: scale(1.75,1); //stretch icon to make it wider.
+        .navIconButton();
+        .navHover();
+        &:focus {
+            outline: none;
+        }
+        @media @tablet {
+            width: 20%;
+            font-size: 3rem;
+        }
+    }
+    .links {
+        padding: 20% 10%;
+        height: 20%;
+        .displayFlex(space-between, column);
+        @media @short {
+            padding-top: 0;
+            padding-bottom: 20%;
+            min-height: 120px;
+        }
+        @media @tablet {
+            display: none;
+        }
+        button {
+            .navIconButton();
+            a {
+                .navAnchor(2rem);
+            }
+        }
+        a {
+            .navAnchor(1.6rem);
+        }
+    }
+}
+.expanded-sidebar {
+    height: 100%;
+    width: 0;
+    background-color: @dark-bg-opacity;
+    position: fixed;
+    left: 5%;
+    .displayFlex(center, column);
+    transition: 0.5s;
+    overflow-x: hidden;
+    @media @tablet {
+        height: 0;
+        left: auto;
+        right: 0;
+        top: 10vh;
+        overflow-y: hidden;
+    }
+    a {
+        .navAnchor(4rem);
+        margin: 5% 4vw;
+        min-width: 190px; //Prevent anchor tag text from wrapping when the sidebar collapses.
+        @media @tablet {
+            font-size: 2.5rem;
+        }
+    }
+}
