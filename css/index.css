@@ -833,13 +833,13 @@ header .banner .button:hover {
   background-position: center;
   background-size: 145%;
 }
-.team .team-member-5 .team-member-pic {
-  background-image: url("D:/Lambda/Marketing-Page/img/oscar.jpg");
-  background-position: center;
-  background-size: 145%;
-}
 .team .team-member-6 .team-member-pic {
   background-image: url("D:/Lambda/Marketing-Page/img/anika.jpg");
+  background-position: center;
+  background-size: 135%;
+}
+.team .team-member-7 .team-member-pic {
+  background-image: url("D:/Lambda/Marketing-Page/img/todd.jpg");
   background-position: center;
   background-size: 135%;
 }
