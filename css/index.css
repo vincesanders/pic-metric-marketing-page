@@ -351,7 +351,7 @@ header .gallery {
 header .gallery #pic1 {
   width: 32%;
   height: 24%;
-  background-image: url("D:/Lambda/Marketing-Page/img/surfer-walking-on-beach.jpg");
+  background-image: url("../img/surfer-walking-on-beach.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -366,7 +366,7 @@ header .gallery #pic2 {
   width: 33%;
   height: 24%;
   margin: 0 1.5%;
-  background-image: url("D:/Lambda/Marketing-Page/img/man-holding-up-bolder.jpg");
+  background-image: url("../img/man-holding-up-bolder.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -379,7 +379,7 @@ header .gallery #pic2 {
 header .gallery #pic3 {
   width: 32%;
   height: 24%;
-  background-image: url("D:/Lambda/Marketing-Page/img/asian-mother.jpg");
+  background-image: url("../img/asian-mother.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -398,7 +398,7 @@ header .gallery #pic3 {
 header .gallery #pic4 {
   width: 32%;
   height: 33%;
-  background-image: url("D:/Lambda/Marketing-Page/img/lookig-up-at-the-roof-of-the-forest.jpg");
+  background-image: url("../img/lookig-up-at-the-roof-of-the-forest.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -414,7 +414,7 @@ header .gallery #pic5 {
   width: 33%;
   height: 33%;
   margin: 0 1.5%;
-  background-image: url("D:/Lambda/Marketing-Page/img/bus-and-kayaks-on-beach.jpg");
+  background-image: url("../img/bus-and-kayaks-on-beach.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -428,7 +428,7 @@ header .gallery #pic5 {
 header .gallery #pic6 {
   width: 32%;
   height: 33%;
-  background-image: url("D:/Lambda/Marketing-Page/img/africa-face-paint.jpg");
+  background-image: url("../img/africa-face-paint.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -447,7 +447,7 @@ header .gallery #pic6 {
 header .gallery #pic7 {
   width: 40%;
   height: 29%;
-  background-image: url("D:/Lambda/Marketing-Page/img/bw-man-smoking.jpg");
+  background-image: url("../img/bw-man-smoking.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -466,7 +466,7 @@ header .gallery #pic7 {
 header .gallery #pic8 {
   width: 58.5%;
   height: 29%;
-  background-image: url("D:/Lambda/Marketing-Page/img/blond-woman-on-bridge.jpg");
+  background-image: url("../img/blond-woman-on-bridge.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -480,7 +480,7 @@ header .gallery #pic8 {
 header .gallery #pic9 {
   width: 32%;
   height: 9%;
-  background-image: url("D:/Lambda/Marketing-Page/img/looking-up-skyscraper.jpg");
+  background-image: url("../img/looking-up-skyscraper.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -495,7 +495,7 @@ header .gallery #pic10 {
   width: 33%;
   height: 9%;
   margin: 0 1.5%;
-  background-image: url("D:/Lambda/Marketing-Page/img/big-smile-in-paris.jpg");
+  background-image: url("../img/big-smile-in-paris.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -509,7 +509,7 @@ header .gallery #pic10 {
 header .gallery #pic11 {
   width: 32%;
   height: 9%;
-  background-image: url("D:/Lambda/Marketing-Page/img/net-architecture.jpg");
+  background-image: url("../img/net-architecture.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -528,7 +528,7 @@ header .gallery #mobile-pic {
     display: flex;
     width: 100%;
     height: 100vh;
-    background-image: url("D:/Lambda/Marketing-Page/img/camera-in-front-of-smoke.jpg");
+    background-image: url("../img/camera-in-front-of-smoke.jpg");
     background-color: white;
     background-repeat: no-repeat;
     background-position: center;
@@ -719,7 +719,7 @@ header .banner .button:hover {
 }
 .about-us-header {
   height: 40vh;
-  background-image: url("D:/Lambda/Marketing-Page/img/team-working.jpg");
+  background-image: url("../img/team-working.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -809,37 +809,37 @@ header .banner .button:hover {
   color: #ff0033;
 }
 .team .team-member-1 .team-member-pic {
-  background-image: url("D:/Lambda/Marketing-Page/img/vince.jpg");
+  background-image: url("../img/vince.jpg");
   background-position: 58% 50%;
   background-size: 250%;
 }
 .team .team-member-2 .team-member-pic {
-  background-image: url("D:/Lambda/Marketing-Page/img/samuel.jpg");
+  background-image: url("../img/samuel.jpg");
   background-position: center;
   background-size: 150%;
 }
 .team .team-member-3 .team-member-pic {
-  background-image: url("D:/Lambda/Marketing-Page/img/cody.jpg");
+  background-image: url("../img/cody.jpg");
   background-position: 58% 50%;
   background-size: 250%;
 }
 .team .team-member-4 .team-member-pic {
-  background-image: url("D:/Lambda/Marketing-Page/img/ryan.jpg");
+  background-image: url("../img/ryan.jpg");
   background-position: 45% 50%;
   background-size: 150%;
 }
 .team .team-member-5 .team-member-pic {
-  background-image: url("D:/Lambda/Marketing-Page/img/oscar.jpg");
+  background-image: url("../img/oscar.jpg");
   background-position: center;
   background-size: 145%;
 }
 .team .team-member-6 .team-member-pic {
-  background-image: url("D:/Lambda/Marketing-Page/img/anika.jpg");
+  background-image: url("../img/anika.jpg");
   background-position: center;
   background-size: 135%;
 }
 .team .team-member-7 .team-member-pic {
-  background-image: url("D:/Lambda/Marketing-Page/img/todd.jpg");
+  background-image: url("../img/todd.jpg");
   background-position: center;
   background-size: 135%;
 }
