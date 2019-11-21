@@ -843,3 +843,8 @@ header .banner .button:hover {
   background-position: center;
   background-size: 135%;
 }
+.team .team-member-8 .team-member-pic {
+  background-image: url("../img/kyle.jpg");
+  background-position: center;
+  background-size: 135%;
+}
