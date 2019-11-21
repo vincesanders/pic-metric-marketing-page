@@ -833,10 +833,17 @@ header .banner .button:hover {
   background-position: center;
   background-size: 145%;
 }
+.team .team-member-6 {
+  width: 100%;
+}
 .team .team-member-6 .team-member-pic {
+  width: 300px;
   background-image: url("../img/anika.jpg");
   background-position: center;
   background-size: 135%;
+}
+.team .team-member-6 .team-member-info {
+  width: 240px;
 }
 .team .team-member-7 .team-member-pic {
   background-image: url("../img/todd.jpg");
@@ -845,6 +852,11 @@ header .banner .button:hover {
 }
 .team .team-member-8 .team-member-pic {
   background-image: url("../img/kyle.jpg");
+  background-position: center;
+  background-size: 135%;
+}
+.team .team-member-9 .team-member-pic {
+  background-image: url("../img/john.jpg");
   background-position: center;
   background-size: 135%;
 }
