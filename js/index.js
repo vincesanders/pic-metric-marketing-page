@@ -5,9 +5,10 @@ let expanded = false;
 const mobile = window.matchMedia("(max-width: 500px)");
 const tablet = window.matchMedia("(max-width: 800px)");
 const smallMonitor = window.matchMedia("(max-width: 1550px)");
-console.log(stepsIcons);
 
-stepsIconChange(stepsIcons);
+stepsIconChange();
+
+window.addEventListener('resize', stepsIconChange);
 
 if (tablet.matches) {
     expandedMenu.style.width = "30%"; //change default value of width on smaller screens.
@@ -43,14 +44,14 @@ hamBtn.addEventListener("click", function(event) {
     }
 });
 
-function stepsIconChange(col) {
+function stepsIconChange() {
     if (window.matchMedia('(max-width: 800px)').matches) {
-        for (let i = 0; i < col.length; i++) {
-            col[i].innerHTML = '<i class="fas fa-chevron-circle-down"></i>';
+        for (let i = 0; i < stepsIcons.length; i++) {
+            stepsIcons[i].innerHTML = '<i class="fas fa-chevron-circle-down"></i>';
         }
     } else {
-        for (let i = 0; i < col.length; i++) {
-            col[i].innerHTML = '<i class="fas fa-chevron-circle-right"></i>';
+        for (let i = 0; i < stepsIcons.length; i++) {
+            stepsIcons[i].innerHTML = '<i class="fas fa-chevron-circle-right"></i>';
         }
     }
 }
