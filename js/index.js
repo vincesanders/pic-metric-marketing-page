@@ -1,14 +1,19 @@
 const hamBtn = document.getElementById("hamburger");
 const expandedMenu = document.querySelector(".expanded-sidebar");
+const stepsIcons = document.getElementsByClassName("stepsIcon");
 let expanded = false;
 const mobile = window.matchMedia("(max-width: 500px)");
 const tablet = window.matchMedia("(max-width: 800px)");
 const smallMonitor = window.matchMedia("(max-width: 1550px)");
 
+stepsIconChange();
+
+window.addEventListener('resize', stepsIconChange);
+
 if (tablet.matches) {
     expandedMenu.style.width = "30%"; //change default value of width on smaller screens.
     let signInAnchor = document.createElement("a");
-    signInAnchor.setAttribute("href", "login.html");
+    signInAnchor.setAttribute("href", "https://pic-metric.netlify.com/login");
     signInAnchor.innerText = "Sign In";
     expandedMenu.appendChild(signInAnchor);
 }
@@ -38,3 +43,15 @@ hamBtn.addEventListener("click", function(event) {
         }
     }
 });
+
+function stepsIconChange() {
+    if (window.matchMedia('(max-width: 800px)').matches) {
+        for (let i = 0; i < stepsIcons.length; i++) {
+            stepsIcons[i].innerHTML = '<i class="fas fa-chevron-circle-down"></i>';
+        }
+    } else {
+        for (let i = 0; i < stepsIcons.length; i++) {
+            stepsIcons[i].innerHTML = '<i class="fas fa-chevron-circle-right"></i>';
+        }
+    }
+}
