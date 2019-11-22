@@ -73,6 +73,7 @@ function setTopBar() {
 }
 
 function resizeChanges() {
+    stepsIconChange();
     hamReset();
     if (tablet.matches && isBigScreen === true) { //When going from big screen to little screen
         expandedMenu.classList.add('no-transition');
