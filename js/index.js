@@ -8,7 +8,7 @@ const smallMonitor = window.matchMedia("(max-width: 1550px)");
 if (tablet.matches) {
     expandedMenu.style.width = "30%"; //change default value of width on smaller screens.
     let signInAnchor = document.createElement("a");
-    signInAnchor.setAttribute("href", "login.html");
+    signInAnchor.setAttribute("href", "https://pic-metric.netlify.com/login");
     signInAnchor.innerText = "Sign In";
     expandedMenu.appendChild(signInAnchor);
 }
