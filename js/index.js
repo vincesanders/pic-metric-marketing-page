@@ -1,9 +1,13 @@
 const hamBtn = document.getElementById("hamburger");
 const expandedMenu = document.querySelector(".expanded-sidebar");
+const stepsIcons = document.getElementsByClassName("stepsIcon");
 let expanded = false;
 const mobile = window.matchMedia("(max-width: 500px)");
 const tablet = window.matchMedia("(max-width: 800px)");
 const smallMonitor = window.matchMedia("(max-width: 1550px)");
+console.log(stepsIcons);
+
+stepsIconChange(stepsIcons);
 
 if (tablet.matches) {
     expandedMenu.style.width = "30%"; //change default value of width on smaller screens.
@@ -38,3 +42,15 @@ hamBtn.addEventListener("click", function(event) {
         }
     }
 });
+
+function stepsIconChange(col) {
+    if (window.matchMedia('(max-width: 800px)').matches) {
+        for (let i = 0; i < col.length; i++) {
+            col[i].innerHTML = '<i class="fas fa-chevron-circle-down"></i>';
+        }
+    } else {
+        for (let i = 0; i < col.length; i++) {
+            col[i].innerHTML = '<i class="fas fa-chevron-circle-right"></i>';
+        }
+    }
+}
