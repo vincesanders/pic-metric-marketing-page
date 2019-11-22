@@ -285,6 +285,9 @@ html {
     font-size: 2.5rem;
   }
 }
+.no-transition {
+  transition: none !important;
+}
 footer {
   margin-left: 5%;
   background-color: #330066;
@@ -651,8 +654,7 @@ header .banner .button:hover {
 .about {
   display: flex;
   justify-content: center;
-  height: 60vh;
-  min-height: 600px;
+  margin: 100px 0;
 }
 @media (max-width: 800px) {
   .about {
